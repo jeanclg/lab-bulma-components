@@ -1,5 +1,7 @@
 import React from "react";
 import "bulma/css/bulma.css";
+import CoolButton from "../coolbutton/CoolButton";
+import Signup from "../signup/Signup";
 
 function Navbar() {
   return (
@@ -12,10 +14,18 @@ function Navbar() {
             height="28"
           ></img>
         </a>
+        <a className="navbar-item" href="https://bulma.io/">
+          Home
+        </a>
       </div>
-      <a className="navbar-item" href="https://bulma.io/">
-        Home
-      </a>
+      <div className="navbar-end">
+        <CoolButton className="button is-info" href="#">
+          Login
+        </CoolButton>
+        <CoolButton className="button is-primary" href="#">
+          Signup
+        </CoolButton>
+      </div>
     </nav>
   );
 }
