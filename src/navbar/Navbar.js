@@ -1,19 +1,19 @@
 import React from "react";
 import "bulma/css/bulma.css";
-import CoolButton from "../coolbutton/CoolButton";
 import { Link } from "react-router-dom";
+import CoolButton from "../coolbutton/CoolButton";
 
 function Navbar() {
   return (
     <nav className="navbar is-transparent">
       <div className="navbar-brand">
-        <a className="navbar-item" href="https://bulma.io">
+        <Link className="navbar-item" to="/">
           <img
             src="https://bulma.io/images/bulma-logo.png"
             width="112"
             height="28"
           ></img>
-        </a>
+        </Link>
         <a className="navbar-item" href="https://bulma.io/">
           Home
         </a>

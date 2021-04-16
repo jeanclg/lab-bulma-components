@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CoolButton = (props) => {
   return (
     <div className="navbar-item">
       <div className="field is-grouped">
         <p className="control">
-          <a className={props.className} href={props.href}>
+          <Link className={props.className} to={props.href}>
             <span>{props.children}</span>
-          </a>
+          </Link>
         </p>
       </div>
     </div>
