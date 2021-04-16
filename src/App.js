@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./navbar/Navbar";
 import FormField from "./formfield/FormField";
 import Signup from "./signup/Signup";
+import { BrowserRouter, Route } from "react-router-dom";
 
 const App = () => {
   return (
@@ -13,7 +14,9 @@ const App = () => {
         type="email"
         placeholder="e.g. alexsmith@gmail.com"
       />
-      {/* <Signup /> */}
+      <BrowserRouter>
+        <Route path="/signup" component={Signup} />
+      </BrowserRouter>
     </div>
   );
 };

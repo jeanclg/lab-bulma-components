@@ -1,7 +1,7 @@
 import React from "react";
 import "bulma/css/bulma.css";
 import CoolButton from "../coolbutton/CoolButton";
-import Signup from "../signup/Signup";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -22,7 +22,7 @@ function Navbar() {
         <CoolButton className="button is-info" href="#">
           Login
         </CoolButton>
-        <CoolButton className="button is-primary" href="#">
+        <CoolButton className="button is-primary" href="/signup">
           Signup
         </CoolButton>
       </div>
